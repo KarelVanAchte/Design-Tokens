@@ -1,12 +1,12 @@
 const StyleDictionary = require('style-dictionary').extend({
-    source: ['tokens/*.json'],
+    source: ['tokens/parsed/style-dictionary/tokens.json'],
     platforms: {
       scss: {
-        transformGroup: 'scss',
+        transformGroup: 'web',
         buildPath: 'build/',
         files: [{
-          destination: 'variables.scss',
-          format: 'scss/variables'
+          destination: 'variables.css',
+          format: 'css/variables'
         }]
       }
     }
