@@ -3,7 +3,7 @@ const path = require('path');
 const transformDesignTokens = require('./transformDesignTokens');
 
 const inputFilePath = path.join(__dirname, '../tokens/tokens.json');
-const outputFilePath = path.join(__dirname, '../build/figma-token-studio.json');
+const outputFilePath = path.join(__dirname, '../tokens/parsed/figma-token-studio/tokens.json');
 
 // Load your original design tokens JSON file
 fs.readFile(inputFilePath, 'utf8', (err, data) => {
