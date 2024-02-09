@@ -8,7 +8,7 @@ function transformDesignTokens(inputJson, modifyReferences = false) {
         if (typeof value === 'object' && value !== null) {
           value = transformObject(value); // Recursive call to transform nested objects
         } else if (typeof value === 'string' && modifyReferences) {
-          value = value.replace(/\{_core\.colors\.(.*?)\}/g, '{colors.$1}'); // Modify references
+          value = value.replace(/\{core\.colors\.(.*?)\}/g, '{colors.$1}'); // Modify references
         }
   
         transformed[newKey] = value;
