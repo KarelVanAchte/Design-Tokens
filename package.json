@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "build": "node build.js"
+    "parse": "node parsers/figma-token-studio.js && node parsers/style-dictionary.js",
+    "build": "npm run parse && node build.js"
   },
   "devDependencies": {
     "style-dictionary": "^3.9.2"
