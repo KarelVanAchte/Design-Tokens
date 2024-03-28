@@ -16,7 +16,7 @@ const StyleDictionary = require('style-dictionary').extend({
         transformGroup: 'scss',
         buildPath: 'build/',
         files: [{
-          destination: '_variables.scss"',
+          destination: '_variables.scss',
           format: 'scss/variables',
           filter: (token) => {
             return !token.name.startsWith('core-colors');
